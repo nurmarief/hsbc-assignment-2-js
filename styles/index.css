@@ -1,0 +1,89 @@
+:root {
+  --black-100: hsl(0, 0%, 15%);
+  --black-200: hsl(0, 0%, 22%);
+
+  --white-800: hsl(0, 0%, 76%);
+  --white-900: hsl(0, 0%, 96%);
+
+  --primary: var(--black-100);
+  --secondary: var(--black-200);
+  --accent: var(--white-900);
+
+  --canvas-bg-color: var(--secondary);
+  --paddle-color: var(--accent);
+  --middle-line-color: var(--accent);
+  --ball-color: var(--accent);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  border-width: 0;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+
+button {
+  border: none;
+  font-family: inherit;
+}
+
+.game {
+  padding-block: 25px;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game[hidden] {
+  display: none;
+}
+
+.game__container {
+  width: min(100vw, 500px);
+  /* Aspect ratio should be 5 / 7 to match the canvas */
+  aspect-ratio: 5 / 7;
+}
+
+.game__arena {
+  width: 100%;
+  height: 100%;
+}
+
+.game__start-game {
+  z-index: 999; 
+  width: 100%;
+  height: 100%;
+  background-color: var(--black-200);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: var(--white-900);
+}
+
+
+.button {
+  border-radius: 5px;
+  padding-block: 10px;
+  padding-inline: 20px;
+  background-color: var(--white-800);
+  font-size: 20px;
+  color: var(--black-100);
+  cursor: pointer;
+}
+
+.button:hover {
+  filter: brightness(80%);
+}
+
+.button:active {
+  transform: scale(0.95);
+}

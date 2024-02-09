@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pong</title>
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+  <main>
+    <section>
+      <audio id="ball_bounce_audio" hidden>
+        <source src="./assets/audios/bounce.wav" type="audio/wav">
+      </audio>
+      <audio id="goal_audio" hidden>
+        <source src="./assets/audios/goal.wav" type="audio/wav">
+      </audio>
+      <audio id="start_audio" hidden>
+        <source src="./assets/audios/start.wav" type="audio/wav">
+      </audio>
+      <audio id="win_audio" hidden>
+        <source src="./assets/audios/win.wav" type="audio/wav">
+      </audio>
+      <audio id="lose_audio" hidden>
+        <source src="./assets/audios/lose.wav" type="audio/wav">
+      </audio>
+    </section>
+    <section class="game">
+      <div class="game__container">
+        <canvas class="game__arena" id="arena"></canvas>
+      </div>
+    </section>
+  </main>
+  <script src="./scripts/index.js" type="module"></script>
+</body>
+</html>

@@ -54,6 +54,7 @@ class Arena {
   };
 
   setInfo() {
+    // Set up arena left position in the screen
     this.position.left = Math.round(this.element.getBoundingClientRect().left);
   };
 

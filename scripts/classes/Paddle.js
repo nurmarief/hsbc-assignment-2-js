@@ -23,8 +23,6 @@ class Paddle {
     y: 10,
   };
 
-  isMove = false;
-
   constructor(arenaSize, verticalLocation) {
     this.location.x = this.calculateHorizontalLocation(arenaSize.width, verticalLocation);
     this.location.y = this.calculateVerticalLocation(arenaSize.height, verticalLocation);
@@ -75,7 +73,6 @@ class Paddle {
   };
 
   move(paddlePosition, arenaWidth) {
-    this.isMove = true;
     this.location.x = paddlePosition;
 
     this.checkHorizontalBoundaries(arenaWidth);

@@ -46,9 +46,9 @@ button {
 }
 
 .game__container {
-  width: min(100vw, 500px);
   /* Aspect ratio should be 5 / 7 to match the canvas */
-  aspect-ratio: 5 / 7;
+  height: min(100%, 700px);
+  width: min(100%, 500px);
 }
 
 .game__arena {

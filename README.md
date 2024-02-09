@@ -13,6 +13,7 @@ This is the solution of HSBC Assignment #2: Javascript. In this assignment, stud
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Useful resources](#useful-resources)
+- [Project Model](#project-model)
 
 ## Overview
 
@@ -63,7 +64,7 @@ This is the solution of HSBC Assignment #2: Javascript. In this assignment, stud
 ### Built with
 
 - Semantic HTML5 markup
-- CSS
+- CSS, with BEM Architecture
 - Javascript
 
 ### What I Learned
@@ -103,3 +104,6 @@ This is the solution of HSBC Assignment #2: Javascript. In this assignment, stud
 
 ### Useful Resources
 - [freesound.org](https://freesound.org)
+
+## Project Model
+This project is taking its model from [JacintoDesign pong project](https://github.com/JacintoDesign/pong/). The model live page can be accessed [here](https://jacintodesign.github.io/pong/).

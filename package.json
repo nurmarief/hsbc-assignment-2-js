@@ -1,0 +1,11 @@
+{
+  "name": "pong",
+  "version": "1.0.0",
+  "description": "HSBC Assignment #2: Javascript",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Nur Muhammad Arief Kurniawan <ariefmuhammad897@gmail.com>",
+  "license": "ISC"
+}
